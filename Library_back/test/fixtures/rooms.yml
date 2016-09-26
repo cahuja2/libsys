@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  room_nae: MyString
+  size: MyString
+  library: MyString
+
+two:
+  room_nae: MyString
+  size: MyString
+  library: MyString

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+<% if @user.admin %>
+   <h1>Hey Admin!</h1>
+<% else %>
+   <h1>Hey <%=@user.name%>!</h1>   
+<% end %>
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<% if @user.admin %>
+<h2>Manage Rooms</h2>
+<%= link_to 'Create Room', new_room_path %></br>
+<%= link_to 'Delete Room', rooms_path %></br>
+
+<h2>Manage Users</h2>
+<%= link_to 'Create User', new_user_path %></br>
+<%= link_to 'Delete User', users_path %></br>
+<h2>Manage Reservations</h2>
+<%= link_to 'Create Reservation', new_reservation_path %></br>
+<%= link_to 'Total Bookings', reservations_path %></br>
+
+<% else %>
+<h2>My Bookings</h2>
+<%= link_to 'New Booking', new_reservation_path %></br>
+<%= link_to 'Booking History', reservations_path %></br>
+<% end %> 
+
+<%= link_to 'logout', logout_path %>
+<%= link_to 'Home', login_path %>

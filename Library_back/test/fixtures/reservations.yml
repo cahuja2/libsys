@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  room_name: MyString
+  date: 2016-09-25
+  slot: 1
+  size: MyString
+  library: MyString
+
+two:
+  room_name: MyString
+  date: 2016-09-25
+  slot: 1
+  size: MyString
+  library: MyString

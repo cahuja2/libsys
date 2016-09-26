@@ -1,0 +1,5 @@
+class Reservation < ActiveRecord::Base
+belongs_to :user
+belongs_to :room
+validates :room_name, uniqueness: {scope: :slot,:date, message: "Sorry the room is already booked for that slot!"}
+end

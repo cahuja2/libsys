@@ -1,0 +1,5 @@
+
+<%= link_to 'Edit', edit_user_path(@user) %>
+<%= link_to 'logout', logout_path %>
+<%= link_to 'Create Admin', admin_path %></br>
+

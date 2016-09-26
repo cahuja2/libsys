@@ -1,0 +1,11 @@
+class ChangeRoomNameInRooms < ActiveRecord::Migration
+  
+  def up
+    rename_column :table_name, :column_old_name, :column_new_name
+end
+
+def down
+    rename_column :table_name, :column_new_name, :column_old_name
+end
+  
+end

@@ -1,0 +1,5 @@
+<h1>Welcome to NC State Libraries</h1>
+<p>Already a Member? <%= link_to "Login", login_path %></p>
+<p>New User? <%= link_to "Sign up now!", new_user_path %></p>
+<p>Admin?<%= link_to "Login", admin_path%></p>
+  
